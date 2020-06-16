@@ -1,0 +1,90 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  background-image: url(../images/pattern-bg.svg), url(../images/pattern-quotes.svg), url(../images/pattern-curve.svg);
+  background-position: center top, center center, center bottom;
+  background-repeat: no-repeat;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.slideContainer {
+  width: 85%;
+  margin: 2em auto;
+}
+
+.slideImg {
+  max-width: 300px;
+}
+
+.arrowImg {
+  max-width: 10px;
+}
+
+.slide {
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.slide_text {
+  text-align: center;
+  font-weight: 300;
+  font-size: .6rem;
+  padding: 3em 1em 1.5em 1em;
+}
+
+.slide_nameText {
+  font-weight: 700;
+  font-size: .5rem;
+}
+
+.slide_jobTitle {
+  font-weight: 500;
+  font-size: .5rem;
+}
+
+.slideImg_area {
+  position: relative;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.slideControls {
+  background-color: #fff;
+  padding: .2em .3em;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: -5px;
+  left: 120px;
+}
+
+.slide2 {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=styles.css.map */
