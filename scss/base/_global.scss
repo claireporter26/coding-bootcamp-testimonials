@@ -4,6 +4,7 @@ body {
     margin: 0;
     font-size: 32px;
     font-family: 'Inter', sans-serif;
+    color: $darkBlue;
 
 
     background-image: url(../images/pattern-bg.svg), url(../images/pattern-quotes.svg), url(../images/pattern-curve.svg);
@@ -19,3 +20,10 @@ body {
 img {
     width: 100%;
 }
+
+// ## Layout
+
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
