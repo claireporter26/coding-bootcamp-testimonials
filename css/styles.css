@@ -5,18 +5,13 @@ body {
   font-size: 32px;
   font-family: 'Inter', sans-serif;
   color: #202046;
-  background-image: url(../images/pattern-bg.svg), url(../images/pattern-quotes.svg), url(../images/pattern-curve.svg);
-  background-position: center top, center center, center bottom;
-  background-repeat: no-repeat;
+  background: url(../images/pattern-bg.svg) top no-repeat, url(../images/pattern-quotes.svg) no-repeat, url(../images/pattern-curve.svg) left bottom no-repeat;
+  background-size: 73%, 10%, 80%;
 }
 
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-img {
-  width: 100%;
 }
 
 .slideContainer {
@@ -41,7 +36,8 @@ img {
   text-align: center;
   font-weight: 300;
   font-size: .6rem;
-  padding: 3em 1em 1.5em 1em;
+  padding: 3em 1em 0 1em;
+  margin-bottom: 0;
 }
 
 .slide_nameText {
@@ -81,9 +77,15 @@ img {
   display: none;
 }
 
+footer {
+  margin: 0;
+  padding: 0;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding: 0 0 1em 0;
 }
 
 .attribution a {

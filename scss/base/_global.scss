@@ -6,10 +6,8 @@ body {
     font-family: 'Inter', sans-serif;
     color: $darkBlue;
 
-
-    background-image: url(../images/pattern-bg.svg), url(../images/pattern-quotes.svg), url(../images/pattern-curve.svg);
-    background-position: center top, center center, center bottom;
-    background-repeat: no-repeat;
+    background: url(../images/pattern-bg.svg) top no-repeat, url(../images/pattern-quotes.svg) no-repeat, url(../images/pattern-curve.svg) left bottom no-repeat;
+    background-size: 73%, 10%, 80%;
 
 }
 
@@ -18,7 +16,7 @@ body {
 }
 
 img {
-    width: 100%;
+    // width: 100%;
 }
 
 // ## Layout
