@@ -5,10 +5,12 @@ body {
     font-size: 32px;
     font-family: 'Inter', sans-serif;
     color: $darkBlue;
+    min-height: 100%;
+}
 
-    background: url(../images/pattern-bg.svg) top no-repeat, url(../images/pattern-quotes.svg) no-repeat, url(../images/pattern-curve.svg) left bottom no-repeat;
-    background-size: 73%, 10%, 80%;
-
+body {
+    background: url(../images/pattern-bg.svg) top no-repeat, url(../images/pattern-quotes.svg) center no-repeat, url(../images/pattern-curve.svg) left bottom no-repeat;
+    background-size: 85%, 15%, 70%;
 }
 
 *, *::before, *::after {
@@ -16,7 +18,7 @@ body {
 }
 
 img {
-    // width: 100%;
+    width: 100%;
 }
 
 // ## Layout
