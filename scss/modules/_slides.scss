@@ -4,7 +4,7 @@
     align-self: center;
 
     @include atLarge {
-        height: 90%;
+        height: 70%;
     }
 
     
@@ -34,6 +34,7 @@
         font-size: .5rem;
         padding: 5em 1em 0 1em;  
         margin-bottom: 0;
+        max-width: 550px;
 
         @include atLarge {
             grid-column: 1 / 4;
@@ -41,7 +42,12 @@
             align-self: center;
             padding-top: 0;
             z-index: 10;
+            text-align: left;
+            font-size: .7rem;
+            padding: 3em 1em 0 1em; 
         }
+
+    
     }
 
     &_nameText {
@@ -63,7 +69,7 @@
    max-width: 240px;
 
    @include atLarge {
-    max-width: 100%;
+    max-width: 500px;
     grid-column: 3 / -1;
     grid-row: 1 / 2;
    }
@@ -73,7 +79,7 @@
 
 .slideControls {
     background-color: #fff;
-    padding: .2em .3em;
+    padding: .3em .4em;
     border-radius: 15px;
     display: flex;
     width: 70px;
@@ -83,6 +89,11 @@
     left: 0;
     right: 0;
     margin: 0 auto;
+
+    @include atLarge {
+        left: 50px;
+        right: auto;
+    }
     
 }
 
