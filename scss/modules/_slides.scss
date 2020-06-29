@@ -1,6 +1,14 @@
 .slideContainer {
     width: 85%;
     margin: .85em auto;
+    align-self: center;
+
+    @include atLarge {
+        height: 90%;
+    }
+
+    
+    
 }
 
 
@@ -8,12 +16,32 @@
     max-width: 330px;
     margin: 0 auto; 
 
+
+    @include atLarge {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        max-width: 1000px;
+        height: 100%;
+        min-height: 300px;
+       
+    }
+    
+    
+
     &_text {
         text-align: center;
         font-weight: 300;
         font-size: .5rem;
         padding: 5em 1em 0 1em;  
         margin-bottom: 0;
+
+        @include atLarge {
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+            align-self: center;
+            padding-top: 0;
+            z-index: 10;
+        }
     }
 
     &_nameText {
@@ -33,6 +61,14 @@
    position: relative;
    margin: 0 auto;
    max-width: 240px;
+
+   @include atLarge {
+    max-width: 100%;
+    grid-column: 3 / -1;
+    grid-row: 1 / 2;
+   }
+
+ 
 }
 
 .slideControls {

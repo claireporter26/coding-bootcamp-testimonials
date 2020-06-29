@@ -5,12 +5,18 @@ body {
   font-size: 32px;
   font-family: 'Inter', sans-serif;
   color: #202046;
-  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
+}
+
+html {
+  height: 100%;
 }
 
 body {
   background: url(../images/pattern-bg.svg) top no-repeat, url(../images/pattern-quotes.svg) center no-repeat, url(../images/pattern-curve.svg) left bottom no-repeat;
   background-size: 85%, 15%, 70%;
+  min-height: 100%;
 }
 
 *, *::before, *::after {
@@ -26,6 +32,12 @@ img {
   max-width: 300px;
 }
 
+@media (min-width: 700px) {
+  .slideImg {
+    max-width: 100%;
+  }
+}
+
 .arrowImg {
   max-width: 10px;
 }
@@ -33,11 +45,32 @@ img {
 .slideContainer {
   width: 85%;
   margin: .85em auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (min-width: 700px) {
+  .slideContainer {
+    height: 90%;
+  }
 }
 
 .slide {
   max-width: 330px;
   margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .slide {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    max-width: 1000px;
+    height: 100%;
+    min-height: 300px;
+  }
 }
 
 .slide_text {
@@ -46,6 +79,22 @@ img {
   font-size: .5rem;
   padding: 5em 1em 0 1em;
   margin-bottom: 0;
+}
+
+@media (min-width: 700px) {
+  .slide_text {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-top: 0;
+    z-index: 10;
+  }
 }
 
 .slide_nameText {
@@ -63,6 +112,16 @@ img {
   position: relative;
   margin: 0 auto;
   max-width: 240px;
+}
+
+@media (min-width: 700px) {
+  .slideImg_area {
+    max-width: 100%;
+    grid-column: 3 / -1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
 }
 
 .slideControls {
@@ -89,7 +148,9 @@ img {
 
 footer {
   margin: 0;
-  padding: 0;
+  padding: .3em;
+  grid-column: 1 / -1;
+  margin-top: auto;
 }
 
 .attribution {

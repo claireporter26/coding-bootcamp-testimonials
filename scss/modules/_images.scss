@@ -1,5 +1,11 @@
 .slideImg {
     max-width: 300px;
+
+    @include atLarge {
+        max-width: 100%;
+        
+        
+    }
 }
 
 .arrowImg {
