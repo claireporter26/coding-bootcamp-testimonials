@@ -1,5 +1,7 @@
 .slideImg {
     max-width: 300px;
+    margin: 0 auto;
+  
 
     @include atLarge {
         max-width: 100%;
@@ -9,7 +11,7 @@
 }
 
 .arrowImg {
-    max-width: 10px;
+    max-width: 7px;
     // z-index: 5;
     // position: relative;
 }

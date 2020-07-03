@@ -7,9 +7,13 @@ footer {
 }
 
 .attribution { 
-    font-size: .45rem; 
+    font-size: .3rem; 
     text-align: center; 
     padding: 0 0 .2em 0;
+
+    @include atMedium {
+        font-size: .45rem;  
+    }
 }
 
 .attribution a { 
