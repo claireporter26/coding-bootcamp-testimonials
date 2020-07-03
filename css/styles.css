@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background: url(../images/pattern-bg.svg) center top 20px no-repeat, url(../images/pattern-quotes.svg) center no-repeat, url(../images/pattern-curve.svg) left bottom no-repeat;
+  background: url(../images/pattern-bg.svg) center top 20px no-repeat, url(../images/pattern-quotes.svg) center 55% no-repeat, url(../images/pattern-curve.svg) left 0 bottom 0 no-repeat;
   background-size: 84%, 15%, 85%;
   min-height: 100%;
   display: -ms-grid;
@@ -21,14 +21,14 @@ body {
 
 @media (min-width: 380px) {
   body {
-    background: url(../images/pattern-bg.svg) center top 55px no-repeat, url(../images/pattern-quotes.svg) center no-repeat, url(../images/pattern-curve.svg) left bottom no-repeat;
+    background: url(../images/pattern-bg.svg) center top 55px no-repeat, url(../images/pattern-quotes.svg) center 56% no-repeat, url(../images/pattern-curve.svg) left 0 bottom 0 no-repeat;
     background-size: 55%, 15%, 85%;
   }
 }
 
 @media (min-width: 870px) {
   body {
-    background: url(../images/pattern-bg.svg) right 170px top 40px no-repeat, url(../images/pattern-quotes.svg) left 300px top 220px no-repeat, url(../images/pattern-curve.svg) left bottom no-repeat;
+    background: url(../images/pattern-bg.svg) right 170px top 85px no-repeat, url(../images/pattern-quotes.svg) left 300px top 255px no-repeat, url(../images/pattern-curve.svg) left 0 bottom 0 no-repeat;
     background-size: 45%, 7%, 40%;
   }
 }
@@ -45,6 +45,8 @@ img {
 .slideImg {
   max-width: 300px;
   margin: 0 auto;
+  -webkit-box-shadow: 0 35px 25px -12px rgba(32, 32, 70, 0.2);
+          box-shadow: 0 35px 25px -12px rgba(32, 32, 70, 0.2);
 }
 
 @media (min-width: 870px) {
@@ -54,7 +56,13 @@ img {
 }
 
 .arrowImg {
-  max-width: 7px;
+  max-width: 9px;
+}
+
+@media (min-width: 870px) {
+  .arrowImg {
+    max-width: 12px;
+  }
 }
 
 .slideContainer {
@@ -74,6 +82,7 @@ img {
 .slide {
   max-width: 330px;
   margin: 0 auto;
+  margin-top: 28px;
 }
 
 @media (min-width: 380px) {
@@ -168,17 +177,17 @@ img {
 
 .slideControls {
   background-color: #fff;
-  padding: .3em .4em;
-  border-radius: 15px;
+  padding: .30em .4em;
+  border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60px;
+  width: 70px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: absolute;
-  bottom: -10px;
+  bottom: -15px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -194,6 +203,7 @@ img {
   .slideControls {
     left: 50px;
     right: auto;
+    width: 80px;
   }
 }
 
@@ -216,7 +226,7 @@ footer {
 
 @media (min-width: 380px) {
   .attribution {
-    font-size: .45rem;
+    font-size: .40rem;
   }
 }
 

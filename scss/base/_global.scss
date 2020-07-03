@@ -15,19 +15,19 @@ html {
 }
 
 body {
-    background: url(../images/pattern-bg.svg) center top 20px no-repeat, url(../images/pattern-quotes.svg) center no-repeat, url(../images/pattern-curve.svg) left bottom no-repeat;
+    background: url(../images/pattern-bg.svg) center top 20px no-repeat, url(../images/pattern-quotes.svg) center 55% no-repeat, url(../images/pattern-curve.svg) left 0 bottom 0 no-repeat;
     background-size: 84%, 15%, 85%;
     min-height: 100%;
     display: grid;
     
     @include atMedium {
-        background: url(../images/pattern-bg.svg) center top 55px no-repeat, url(../images/pattern-quotes.svg) center no-repeat, url(../images/pattern-curve.svg) left bottom no-repeat;
+        background: url(../images/pattern-bg.svg) center top 55px no-repeat, url(../images/pattern-quotes.svg) center 56% no-repeat, url(../images/pattern-curve.svg) left 0 bottom 0 no-repeat;
         background-size: 55%, 15%, 85%;
     }
 
     @include atLarge {
         
-        background: url(../images/pattern-bg.svg) right 170px top 40px no-repeat, url(../images/pattern-quotes.svg) left 300px top 220px no-repeat, url(../images/pattern-curve.svg) left bottom no-repeat;
+        background: url(../images/pattern-bg.svg) right 170px top 85px no-repeat, url(../images/pattern-quotes.svg) left 300px top 255px no-repeat, url(../images/pattern-curve.svg) left 0 bottom 0 no-repeat;
         background-size: 45%, 7%, 40%;
     }
 }
