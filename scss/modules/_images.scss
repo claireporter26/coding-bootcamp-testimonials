@@ -12,11 +12,31 @@
 }
 
 .arrowImg {
-    max-width: 9px;
-    // z-index: 5;
+
+    z-index: 5;
+
+    .prevArrow {
+        width: 9px;
+
+        @include atLarge {
+            width: 12px;
+        }
+    }
+
+    
+
+    .nextArrow {
+        width: 10.1px;
+
+        @include atLarge {
+            width: 13px;
+        }
+    }
+    
+    
     // position: relative;
 
-    @include atLarge {
-        max-width: 12px;
-    }
+   
+
+   
 }
