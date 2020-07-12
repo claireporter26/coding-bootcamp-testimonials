@@ -99,7 +99,8 @@
 
 .slideControls {
     background-color: #fff;
-    padding: .30em .4em;
+    // padding: .30em .4em;
+    padding: 0 .4em;
     border-radius: 20px;
     display: flex;
     width: 70px;
@@ -121,6 +122,11 @@
 
     }
     
+}
+
+.prevArrow,
+.nextArrow {
+    transition: 0.6s ease;
 }
 
 .slide2 {

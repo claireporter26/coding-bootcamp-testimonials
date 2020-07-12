@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  background: url(../images/pattern-bg.svg) center top 20px no-repeat, url(../images/pattern-quotes.svg) center 55% no-repeat, url(../images/pattern-curve.svg) left 0 bottom 0 no-repeat;
-  background-size: 84%, 15%, 85%;
+  background: url(../images/pattern-bg.svg) center top 20px no-repeat, url(../images/pattern-quotes.svg) center 55% no-repeat, url(../images/pattern-curve.svg) left 0% bottom 0% no-repeat;
+  background-size: 84%, 15%, 90%;
   min-height: 100%;
   display: -ms-grid;
   display: grid;
@@ -21,15 +21,15 @@ body {
 
 @media (min-width: 380px) {
   body {
-    background: url(../images/pattern-bg.svg) center top 55px no-repeat, url(../images/pattern-quotes.svg) center 56% no-repeat, url(../images/pattern-curve.svg) left 0 bottom 0 no-repeat;
-    background-size: 55%, 15%, 85%;
+    background: url(../images/pattern-bg.svg) center top 0px no-repeat, url(../images/pattern-quotes.svg) center 68% no-repeat, url(../images/pattern-curve.svg) 100% 0% no-repeat;
+    background-size: 65%, 12%, 85%;
   }
 }
 
 @media (min-width: 870px) {
   body {
-    background: url(../images/pattern-bg.svg) right 170px top 85px no-repeat, url(../images/pattern-quotes.svg) left 300px top 255px no-repeat, url(../images/pattern-curve.svg) left 0 bottom 0 no-repeat;
-    background-size: 45%, 7%, 40%;
+    background: url(../images/pattern-bg.svg) right 25% top 23% no-repeat, url(../images/pattern-quotes.svg) left 300px top 25% no-repeat, url(../images/pattern-curve.svg) left 0px bottom 0px no-repeat;
+    background-size: 35%, 7%, 40%;
   }
 }
 
@@ -51,7 +51,7 @@ img {
 
 @media (min-width: 870px) {
   .slideImg {
-    max-width: 100%;
+    max-width: 400px;
   }
 }
 
@@ -177,7 +177,7 @@ img {
 
 .slideControls {
   background-color: #fff;
-  padding: .30em .4em;
+  padding: 0 .4em;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,6 +205,12 @@ img {
     right: auto;
     width: 80px;
   }
+}
+
+.prevArrow,
+.nextArrow {
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
 }
 
 .slide2 {
