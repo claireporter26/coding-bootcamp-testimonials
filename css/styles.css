@@ -5,6 +5,7 @@ body {
   font-size: 32px;
   font-family: 'Inter', sans-serif;
   color: #202046;
+  position: relative;
 }
 
 html {
@@ -12,8 +13,8 @@ html {
 }
 
 body {
-  background: url(../images/pattern-bg.svg) center top 20px no-repeat, url(../images/pattern-quotes.svg) center 55% no-repeat, url(../images/pattern-curve.svg) left 0% bottom 0% no-repeat;
-  background-size: 84%, 15%, 90%;
+  background: url(../images/pattern-bg.svg) center top 20px no-repeat, url(../images/pattern-quotes.svg) center 55% no-repeat;
+  background-size: 84%, 15%;
   min-height: 100%;
   display: -ms-grid;
   display: grid;
@@ -21,15 +22,15 @@ body {
 
 @media (min-width: 380px) {
   body {
-    background: url(../images/pattern-bg.svg) center top 0px no-repeat, url(../images/pattern-quotes.svg) center 68% no-repeat, url(../images/pattern-curve.svg) 100% 0% no-repeat;
-    background-size: 65%, 12%, 85%;
+    background: url(../images/pattern-bg.svg) center top 12% no-repeat, url(../images/pattern-quotes.svg) center 48% no-repeat;
+    background-size: 50%, 10%;
   }
 }
 
 @media (min-width: 870px) {
   body {
-    background: url(../images/pattern-bg.svg) right 25% top 23% no-repeat, url(../images/pattern-quotes.svg) left 300px top 25% no-repeat, url(../images/pattern-curve.svg) left 0px bottom 0px no-repeat;
-    background-size: 35%, 7%, 40%;
+    background: url(../images/pattern-bg.svg) right 25% top 23% no-repeat, url(../images/pattern-quotes.svg) left 300px top 25% no-repeat;
+    background-size: 35%, 7%;
   }
 }
 
@@ -71,6 +72,22 @@ img {
           transform: rotate(180deg);
 }
 
+.curve-img {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  z-index: -1;
+  max-width: 80%;
+}
+
+@media (min-width: 870px) {
+  .curve-img {
+    max-width: 40%;
+  }
+}
+
 .slideContainer {
   width: 85%;
   margin: 0 auto;
@@ -106,6 +123,9 @@ img {
         grid-template-columns: repeat(5, 1fr);
     max-width: 1000px;
     min-height: 300px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -209,7 +229,7 @@ img {
   .slideControls {
     left: 50px;
     right: auto;
-    width: 80px;
+    width: 70px;
   }
 }
 

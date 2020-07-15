@@ -5,6 +5,7 @@ body {
     font-size: 32px;
     font-family: 'Inter', sans-serif;
     color: $darkBlue;
+    position: relative;
     
  
 }
@@ -16,21 +17,21 @@ html {
 }
 
 body {
-    background: url(../images/pattern-bg.svg) center top 20px no-repeat, url(../images/pattern-quotes.svg) center 55% no-repeat, url(../images/pattern-curve.svg) left 0% bottom 0% no-repeat;
-    background-size: 84%, 15%, 90%;
+    background: url(../images/pattern-bg.svg) center top 20px no-repeat, url(../images/pattern-quotes.svg) center 55% no-repeat;
+    background-size: 84%, 15%;
     min-height: 100%;
     
     display: grid;
     
     @include atMedium {
-        background: url(../images/pattern-bg.svg) center top 0px no-repeat, url(../images/pattern-quotes.svg) center 68% no-repeat, url(../images/pattern-curve.svg) 100% 0% no-repeat;
-        background-size: 65%, 12%, 85%;
+        background: url(../images/pattern-bg.svg) center top 12% no-repeat, url(../images/pattern-quotes.svg) center 48% no-repeat;
+        background-size: 50%, 10%;
     }
 
     @include atLarge {
         
-        background: url(../images/pattern-bg.svg) right 25% top 23% no-repeat, url(../images/pattern-quotes.svg) left 300px top 25% no-repeat, url(../images/pattern-curve.svg) left 0px bottom 0px no-repeat;
-        background-size: 35%, 7%, 40%;
+        background: url(../images/pattern-bg.svg) right 25% top 23% no-repeat, url(../images/pattern-quotes.svg) left 300px top 25% no-repeat;
+        background-size: 35%, 7%;
     }
 }
 
