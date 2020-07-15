@@ -1,14 +1,11 @@
 const slides = document.querySelectorAll('.slide');
 const prev = document.querySelector('.prevSlide');
 const next = document.querySelector('.nextSlide');
-
 let index = 1;
-
 
 function changeSlide(n) {
     displaySlides(index += n);
 }
-
 
 function displaySlides(n){
 
@@ -24,7 +21,7 @@ function displaySlides(n){
         slides[i].style.display = "none";
        
     }
-    slides[index - 1].style.display = "block";
+    slides[index - 1].style.display = "grid";
 }
 
 document.onkeydown = function(e) {

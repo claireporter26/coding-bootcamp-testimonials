@@ -4,7 +4,6 @@
     }
 }
 
-
 @mixin atLarge {
     @media (min-width: 870px) {
         @content;

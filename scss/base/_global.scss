@@ -6,21 +6,16 @@ body {
     font-family: 'Inter', sans-serif;
     color: $darkBlue;
     position: relative;
-    
- 
 }
 
 html {
     height: 100%;
-    
-   
 }
 
 body {
     background: url(../images/pattern-bg.svg) center top 20px no-repeat, url(../images/pattern-quotes.svg) center 55% no-repeat;
     background-size: 84%, 15%;
     min-height: 100%;
-    
     display: grid;
     
     @include atMedium {
@@ -29,9 +24,8 @@ body {
     }
 
     @include atLarge {
-        
         background: url(../images/pattern-bg.svg) right 25% top 23% no-repeat, url(../images/pattern-quotes.svg) left 300px top 25% no-repeat;
-        background-size: 35%, 7%;
+        background-size: 37%, 7%;
     }
 }
 
@@ -43,9 +37,3 @@ img {
     width: 100%;
 }
 
-// ## Layout
-
-// The designs were created to the following widths:
-
-// - Mobile: 375px
-// - Desktop: 1440px

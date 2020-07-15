@@ -3,15 +3,9 @@
     margin: 0 auto;
     align-self: center;
     
-    
-
     @include atLarge {
         height: 70%;
-        
     }
-
-    
-    
 }
 
 
@@ -29,14 +23,9 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         max-width: 1000px;
-        // height: 100%;
         min-height: 300px;
-        justify-content: center;
-       
     }
     
-    
-
     &_text {
         text-align: center;
         font-weight: 300;
@@ -83,7 +72,6 @@
    max-width: 240px;
    display: flex;
    
-
    @include atMedium {
        max-width: 400px;
        margin-top: 10px;
@@ -94,13 +82,10 @@
     grid-column: 3 / -1;
     grid-row: 1 / 2;
    }
-
- 
 }
 
 .slideControls {
     background-color: #fff;
-    // padding: .30em .4em;
     padding: .1em;
     border-radius: 20px;
     display: flex;
@@ -112,8 +97,6 @@
     right: 0;
     margin: 0 auto;
 
-   
-
     @include atMedium {
         bottom: -15px;
     }
@@ -122,11 +105,7 @@
         left: 50px;
         right: auto;
         width: 70px;
-
     }
-
- 
-    
 }
 
 button {
@@ -134,7 +113,6 @@ button {
     border: none;
     padding: .2em .3em .2em .2em;
     border-radius: 20px;
-   
 }
 
 .prevArrow,
@@ -142,8 +120,7 @@ button {
     transition: 0.1s ease;
 
     &:hover {
-        transform: scale(1.1)
-;    }
+        transform: scale(1.1);    }
 }
 
 .prevArrow {

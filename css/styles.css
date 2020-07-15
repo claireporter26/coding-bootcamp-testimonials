@@ -30,7 +30,7 @@ body {
 @media (min-width: 870px) {
   body {
     background: url(../images/pattern-bg.svg) right 25% top 23% no-repeat, url(../images/pattern-quotes.svg) left 300px top 25% no-repeat;
-    background-size: 35%, 7%;
+    background-size: 37%, 7%;
   }
 }
 
@@ -123,9 +123,6 @@ img {
         grid-template-columns: repeat(5, 1fr);
     max-width: 1000px;
     min-height: 300px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 

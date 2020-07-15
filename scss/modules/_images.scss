@@ -2,40 +2,23 @@
     max-width: 300px;
     margin: 0 auto;
     box-shadow: 0 35px 25px -12px hsla(240, 38%, 20%, .2);
-  
 
     @include atLarge {
         max-width: 400px;
-        
-        
     }
 }
 
 .arrowImg {
-
     z-index: 5;
-
     width: 10px;
 
-        @include atLarge {
-            width: 12px;
-        }
+    @include atLarge {
+        width: 12px;
+    }
 
-
-    
-
-    // .nextArrow {
-    //     width: 10.1px;
-
-    //     @include atLarge {
-    //         width: 13px;
-    //     }
-    // }
-    
     &--next {
         transform: rotate(180deg);
     }
-    
 }
 
 .curve-img {
@@ -50,8 +33,4 @@
     @include atLarge{
         max-width: 40%;
     }
-    
-    
-    // margin-top: auto;
-    // grid-column: 1 / -1;
 }
