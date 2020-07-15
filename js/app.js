@@ -26,3 +26,20 @@ function displaySlides(n){
     }
     slides[index - 1].style.display = "block";
 }
+
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+        case 37:
+            changeSlide(-1);
+            break;
+        case 38:
+            changeSlide(-1);
+            break;
+        case 39:
+            changeSlide(1);
+            break;
+        case 40:
+            changeSlide(1);
+            break;
+    }
+};
