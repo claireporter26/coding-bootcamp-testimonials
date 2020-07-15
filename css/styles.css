@@ -57,26 +57,18 @@ img {
 
 .arrowImg {
   z-index: 5;
-}
-
-.arrowImg .prevArrow {
-  width: 9px;
+  width: 10px;
 }
 
 @media (min-width: 870px) {
-  .arrowImg .prevArrow {
+  .arrowImg {
     width: 12px;
   }
 }
 
-.arrowImg .nextArrow {
-  width: 10.1px;
-}
-
-@media (min-width: 870px) {
-  .arrowImg .nextArrow {
-    width: 13px;
-  }
+.arrowImg--next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .slideContainer {
@@ -196,7 +188,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70px;
+  width: 60px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -230,8 +222,22 @@ button {
 
 .prevArrow,
 .nextArrow {
-  -webkit-transition: 0.6s ease;
-  transition: 0.6s ease;
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+}
+
+.prevArrow:hover,
+.nextArrow:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.prevArrow {
+  padding: .1em 0 .1em .3em;
+}
+
+.nextArrow {
+  padding: .1em .3em .1em 0;
 }
 
 .slide2 {
