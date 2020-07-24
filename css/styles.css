@@ -200,7 +200,7 @@ img {
 
 .slideControls {
   background-color: #fff;
-  padding: .1em;
+  padding: .1em .1em 0 .1em;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -233,7 +233,7 @@ img {
 button {
   background-color: #fff;
   border: none;
-  padding: .2em .3em .2em .2em;
+  padding: .2em .2em .2em .2em;
   border-radius: 20px;
 }
 

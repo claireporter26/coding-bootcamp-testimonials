@@ -50,7 +50,6 @@
             padding: 3em 1em 0 1em; 
         }
 
-    
     }
 
     &_nameText {
@@ -86,7 +85,7 @@
 
 .slideControls {
     background-color: #fff;
-    padding: .1em;
+    padding: .1em .1em 0 .1em;
     border-radius: 20px;
     display: flex;
     width: 60px;
@@ -111,7 +110,7 @@
 button {
     background-color: #fff;
     border: none;
-    padding: .2em .3em .2em .2em;
+    padding: .2em .2em .2em .2em;
     border-radius: 20px;
 }
 
