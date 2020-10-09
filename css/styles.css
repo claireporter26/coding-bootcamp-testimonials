@@ -49,6 +49,7 @@ img {
   margin: 0 auto;
   -webkit-box-shadow: 0 35px 25px -12px rgba(32, 32, 70, 0.2);
           box-shadow: 0 35px 25px -12px rgba(32, 32, 70, 0.2);
+  display: block;
 }
 
 @media (min-width: 870px) {
